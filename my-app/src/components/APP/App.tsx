@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from '../../logo.svg';
-import './App.css';
+import Styles from "./App.module.css"
+import Header from "../Header/Header"
+import CognitiveTechnologies from '../CognitiveTechnologies/CognitiveTechnologies';
+import About from '../About/About';
+import ResearchLab from '../ResearchLab/ResearchLab';
+import Progects from '../Progects/Progects';
+import Education from '../Education/Education';
+import Publications from '../Publications/Publications';
+import Team from '../Team/Team';
+import Partners from '../Partners/Partners';
+import Contacts from '../Contacts/Contacts';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Styles.App">
+      
+      <Header />
+      <CognitiveTechnologies />
+      <ResearchLab />
+      <Education />
+      <Publications />
+      <Team />
+      <Partners />
+      <Contacts />
+      <Footer />
+
     </div>
   );
 }
