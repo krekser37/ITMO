@@ -1,12 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "../src/components/APP/App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './components/APP/App';
+import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
-      <App />
+
+
+    <App />
+
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
+
+reportWebVitals();
+
 

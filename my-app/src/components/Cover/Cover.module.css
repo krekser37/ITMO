@@ -1,0 +1,22 @@
+.Cover{
+    background-color: #000D26;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.Logo{
+    margin: auto;
+    padding: 0;
+    background-image: url(../../img/Logo_AI\ 1.png);
+    width: 622px;
+    height: 224px;
+}
+
+.Logo:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}

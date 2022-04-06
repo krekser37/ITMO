@@ -1,0 +1,59 @@
+.CognitiveTechnologies{
+    margin: 0;
+    padding: 172px 0 0 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../img/Background\ image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.Title{
+    margin: 0 165px 0 auto;
+    padding: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 68px;
+    max-width: 445px;
+    }
+
+.BoldText{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    
+}
+
+.Subtitle{
+    margin: 12px 165px 50px auto;
+    padding: 0;
+    color: white;
+    max-width: 445px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.Button{
+    margin: 0 260px 0 0;
+    padding: 16px;
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    background: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.Button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
