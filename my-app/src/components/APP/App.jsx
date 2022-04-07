@@ -14,31 +14,31 @@ import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
 
 const App = () => {
-    const [isCover, setIsCover] = useState(false);
+const [isCover, setIsCover] = useState(false);
 
-    if (isCover) {
-        return (
-            <div className={Styles.App}>
-                <Cover setIsCover={setIsCover} />
-            </div>
-        );
-    } else {
-        return (
-            <div className={Styles.App}>
-                <Header />
-                <CognitiveTechnologies />
-                <About />
-                <ResearchLab />
-                <Progects />
-                <Education />
-                <Publications />
-                <Team />
-                <Partners />
-                <Contacts />
-                <Footer />
-            </div>
-        );
-    }
+if (isCover) {
+    return (
+    <div className={Styles.App}>
+        <Cover setIsCover={setIsCover} />
+    </div>
+    );
+} else {
+    return (
+    <div className={Styles.App}>
+        <Header />
+        <CognitiveTechnologies />
+        <About />
+        <ResearchLab />
+        <Progects />
+        <Education />
+        <Publications />
+        <Team />
+        <Partners />
+        <Contacts />
+        <Footer />
+    </div>
+    );
+}
 };
 
 export default App;
