@@ -47,15 +47,7 @@ const About = () => {
                
             </Swiper>
             
-            {/* <section className={Styles.Swiper}>
-                <article className={Styles.Card}>
-                    <p className={Styles.TextDate}></p>
-                    <h3 className={Styles.TextTitle}></h3>                    
-                    <div className={Styles.Line}></div>
-                    <p className={Styles.TextDescription}></p>
-                    <image scr={Needle} className={Styles.Needle} />
-                </article>
-            </section> */}
+          
         </div>
     )
 }
