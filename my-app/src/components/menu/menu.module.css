@@ -1,0 +1,32 @@
+.Menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.Link{
+    margin: 0 20.83px 0 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 100px;
+}
+
+
+
+.Link:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.link:last-of-type{
+    margin: 0;
+}
