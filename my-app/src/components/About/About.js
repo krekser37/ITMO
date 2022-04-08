@@ -21,7 +21,6 @@ const About = () => {
 
             <Swiper
                 className={Styles.Swiper}
-            // install Swiper modules
                 modules={[Navigation, Pagination, A11y]}
                 spaceBetween={32}
                 slidesPerView={3}
