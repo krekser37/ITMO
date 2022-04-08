@@ -1,5 +1,5 @@
 import Styles from "./CognitiveTechnologies.module.css";
-import Background from"../../img/Background.png"
+import Background from "../../img/CognitiveTechnologies/Background.png";
 
 const CognitiveTechnologies = () => {
     return (

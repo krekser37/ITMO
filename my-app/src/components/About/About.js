@@ -1,8 +1,8 @@
 import Styles from "./About.module.css";
-import Needle from "../../img/Needle.svg";
+import Needle from "../../img/About/Needle.svg";
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
@@ -22,26 +22,25 @@ const About = () => {
             <Swiper
                 className={Styles.Swiper}
             // install Swiper modules
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, A11y]}
                 spaceBetween={32}
                 slidesPerView={3}
                 navigation
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
                 >
                 <>
                 {news.map((element, index) => (
-                    <SwiperSlide className={Styles.Card}>
+                    <SwiperSlide className={Styles.Card} key={index}>
                         {/* <article className={Styles.Card}> */}
-                            <p className={Styles.TextDate}></p>
-                            <h3 className={Styles.TextTitle}></h3>                    
+                            <p className={Styles.TextDate}>{element.date}</p>
+                            <h3 className={Styles.TextTitle}>{element.title}</h3>                    
                             <div className={Styles.Line}></div>
-                            <p className={Styles.TextDescription}></p>
-                            <image scr={Needle} className={Styles.Needle} />
+                            <p className={Styles.TextDescription}>{element.description}</p>
+                            <div className={Styles.Needle}></div>
                         {/* </article> */}
-                </SwiperSlide>
+                    </SwiperSlide>
                 ))}
                 </>
                
