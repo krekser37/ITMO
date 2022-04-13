@@ -59,22 +59,52 @@ const Publications = () => {
                 <span className={styles.cardAuthors}>{el.authors}</span>
                 <p className={styles.cardParagraph}>{el.text}</p>
                 <div className={styles.cardFooter}>
+                  <a href="#">
                   <span className={styles.cardFooter_heading}>
                     Читать полностью
                   </span>
                   <div className={styles.cardFooter_arrow} />
+                  </a>
                   <div className={styles.cardFooter_share} />
-                  <ul>
-                    <li>
-                      <a></a>
-                    </li>
-                    <li>
-                      <a></a>
-                    </li>
-                    <li>
-                      <a></a>
-                    </li>
-                  </ul>
+                  <div className={styles.cardFooter_social}>
+                    <ul className={styles.cardFooter_socialList}>
+                      <li>
+                        <a href="#">
+                          <div
+                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__vk}`}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div
+                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__tg}`}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div
+                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__yt}`}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div
+                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__vk}`}
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <div
+                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__tg}`}
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

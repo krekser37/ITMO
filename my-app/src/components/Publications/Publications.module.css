@@ -28,6 +28,7 @@
 .card {
   box-sizing: border-box;
   background-color: white;
+  box-shadow: 0 0 7px rgb(213, 213, 213);
   padding: 20px 19px 30px;
   border-radius: 10px;
   height: 548px;
@@ -127,7 +128,7 @@
 }
 
 .cardFooter_heading {
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -145,8 +146,57 @@
 .cardFooter_share {
   width: 21px;
   height: 21px;
+  margin: 0 0 6px 66px;
   background-image: url("../../img/publications/share_logo.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.cardFooter_social {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 17px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 7px rgb(229, 229, 229);
+  height: 56px;
+  width: 184px;
+  border-radius: 8px;
+  top: -62px;
+  right: 3px;
+  z-index: 10000000000;
+}
+
+.cardFooter_social::after {
+  content: "";
+  border: 7.5px solid transparent;
+  border-top: 7.5px solid rgb(255, 255, 255);
+  position: absolute;
+  bottom: -15.5px;
+  right: 23px;
+}
+
+.cardFooter_socialList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.cardFooter_socialLogo {
+  width: 22px;
+  height: 22px;
+}
+
+.cardFooter_socialLogo__vk {
+  background-image: url("../../img/publications/vk_icon.svg");
+}
+
+.cardFooter_socialLogo__yt {
+  background-image: url("../../img/publications/yt_icon.svg");
+}
+
+.cardFooter_socialLogo__tg {
+  background-image: url("../../img/publications/telegram_icon.svg");
 }
