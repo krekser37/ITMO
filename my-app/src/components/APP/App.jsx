@@ -7,7 +7,7 @@ import About from "../About/About";
 import ResearchLab from "../ResearchLab/ResearchLab";
 import Progects from "../Progects/Progects";
 import Education from "../Education/Education";
-import Publications from "../Publications/Publications";
+import Publications from "../publications/publications";
 import Team from "../Team/Team";
 import Partners from "../Partners/Partners";
 import Contacts from "../Contacts/Contacts";

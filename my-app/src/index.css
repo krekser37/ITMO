@@ -6,7 +6,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    overflow-x: hidden;
 }
 
 body {
