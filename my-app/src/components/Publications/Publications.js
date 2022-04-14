@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./publications.module.css";
 import "./publicationsSwiper.css";
 
@@ -13,13 +14,13 @@ import "swiper/css/scrollbar";
 import "swiper/css/a11y";
 
 import data from "../News/publicationsData";
+import PublicationCard from "../publication-card/publication-card";
 
 const Publications = () => {
   return (
     <section className={styles.publications}>
       <div className={styles.wrapper}>
         <h2 className={styles.title}>Публикации</h2>
-
         <Swiper
           wrapperTag="ul"
           className={styles.slider}
@@ -27,6 +28,7 @@ const Publications = () => {
           navigation={{
             nextEl: `.${styles.sliderButtonNext}`,
             prevEl: `.${styles.sliderButtonPrev}`,
+            disabledClass: styles.sliderButtonDisabled,
           }}
           pagination={{
             el: `.${styles.sliderPagination}`,
@@ -51,61 +53,7 @@ const Publications = () => {
           <>
             {data.map((el) => (
               <SwiperSlide className={styles.card} key={el._id} tag="li">
-                <div
-                  style={{ backgroundImage: `url("${el.img}")` }}
-                  className={styles.cardImage}
-                />
-                <h3 className={styles.cardHeading}>{el.heading}</h3>
-                <span className={styles.cardAuthors}>{el.authors}</span>
-                <p className={styles.cardParagraph}>{el.text}</p>
-                <div className={styles.cardFooter}>
-                  <a href="#">
-                  <span className={styles.cardFooter_heading}>
-                    Читать полностью
-                  </span>
-                  <div className={styles.cardFooter_arrow} />
-                  </a>
-                  <div className={styles.cardFooter_share} />
-                  <div className={styles.cardFooter_social}>
-                    <ul className={styles.cardFooter_socialList}>
-                      <li>
-                        <a href="#">
-                          <div
-                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__vk}`}
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div
-                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__tg}`}
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div
-                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__yt}`}
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div
-                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__vk}`}
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div
-                            className={`${styles.cardFooter_socialLogo} ${styles.cardFooter_socialLogo__tg}`}
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <PublicationCard element={el} />
               </SwiperSlide>
             ))}
           </>
