@@ -14,17 +14,17 @@ import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
 
 const App = () => {
-const [isCover, setIsCover] = useState(false);
+  const [isCover, setIsCover] = useState(false);
 
-if (isCover) {
+  if (isCover) {
     return (
-    <div className={Styles.App}>
+      <div className={Styles.App}>
         <Cover setIsCover={setIsCover} />
-    </div>
+      </div>
     );
-} else {
+  } else {
     return (
-    <div className={Styles.App}>
+      <div className={Styles.App}>
         <Header />
         <CognitiveTechnologies />
         <About />
@@ -36,9 +36,9 @@ if (isCover) {
         <Partners />
         <Contacts />
         <Footer />
-    </div>
+      </div>
     );
-}
+  }
 };
 
 export default App;
